@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover — BMW Pakistan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav id="nav">
+    <div class="nav-logo" onclick="go('home')">BMW</div>
+    <ul class="nav-links">
+      <li><a onclick="go('home')">Home</a></li>
+      <li><a onclick="go('models')">Models</a></li>
+      <li><a onclick="go('electric')">Electric</a></li>
+      <li><a onclick="go('pricing')">Pricing</a></li>
+      <li><a onclick="go('discover')">Discover</a></li>
+    </ul>
+    <button class="nav-pill" onclick="go('models')">Configure ›</button>
+    <button class="hamburger" id="hbg" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div id="page-discover" class="page active">
+    <section style="background:var(--dark);text-align:center;padding:120px 40px 80px;position:relative;overflow:hidden">
+      <div class="hero-orb1" style="opacity:0.5"></div>
+      <div class="hero-orb2" style="opacity:0.4"></div>
+      <div class="hero-grid"></div>
+      <span class="section-eyebrow" style="position:relative">Innovation & Culture</span>
+      <h1 class="section-title" style="position:relative;margin-bottom:14px">Discover BMW</h1>
+      <p class="section-sub" style="position:relative;margin-bottom:0">Immerse yourself into the world of forward thinking design profiles, racing inheritance history, and upcoming project frameworks.</p>
+    </section>
+    
+    <section class="discover-bg" style="padding-top:20px">
+      <div class="bento">
+        <div class="bcard wide tall reveal" style="min-height:460px">
+          <img class="bcard-img" src="assets/hero-bg.jpg" alt="Design Vision">
+          <div class="bcard-body">
+            <span class="bcard-tag">Design Vision</span>
+            <h3>The Monolithic Form:<br>Future Architecture</h3>
+            <p>How BMW's next-generation styling language strips away unnecessary complexity to highlight impactful, aerodynamically pure proportions.</p>
+          </div>
+        </div>
+        
+        <div class="bcard reveal reveal-delay-1">
+          <img class="bcard-img" src="assets/bmw-logo.png" alt="Heritage">
+          <div class="bcard-body">
+            <span class="bcard-tag">Heritage</span>
+            <h3>M Power Inheritance</h3>
+            <p>Born on track circuits, perfected for open public highways. The timeline of high performance mechanics.</p>
+          </div>
+        </div>
+
+        <div class="bcard reveal reveal-delay-2">
+          <img class="bcard-img" src="assets/bmw-charging.jpg" alt="Sustainability">
+          <div class="bcard-body">
+            <span class="bcard-tag">Sustainability</span>
+            <h3>Circular Production Loop</h3>
+            <p>100% clean secondary metals processing frameworks powering sustainable supply operations globally.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-heading-strip reveal">
+        <h2 class="section-title">Latest News</h2>
+      </div>
+
+      <div class="news-row">
+        <div class="ncard reveal">
+          <img class="ncard-img" src="assets/bmw-3series.jpg" alt="M Performance">
+          <span class="ncard-date">June 15, 2026</span>
+          <h3>New M Performance Parts Collection</h3>
+          <p>Enhance your BMW with the latest M Performance accessories designed for ultimate performance and style.</p>
+          <span class="ncard-link">Read More</span>
+        </div>
+        <div class="ncard reveal reveal-delay-1">
+          <img class="ncard-img" src="assets/bmw-charging.jpg" alt="Charging Network">
+          <span class="ncard-date">May 28, 2026</span>
+          <h3>BMW Charging Network Expansion</h3>
+          <p>Our charging network now covers over 200 cities across Pakistan with rapid fast-charging stations.</p>
+          <span class="ncard-link">Read More</span>
+        </div>
+        <div class="ncard reveal reveal-delay-2">
+          <img class="ncard-img" src="assets/bmw-driving.jpg" alt="Service Packages">
+          <span class="ncard-date">April 10, 2026</span>
+          <h3>Premium Service Packages</h3>
+          <p>Experience worry-free ownership with extended service packages tailored to your driving needs.</p>
+          <span class="ncard-link">Read More</span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="fb-logo">BMW</div>
+        <p>The Ultimate Driving Machine. Engineering excellence since 1916. Proudly serving Pakistan.</p>
+        <div class="footer-newsletter">
+          <input type="email" id="nlInput" placeholder="Your email address">
+          <button onclick="subscribe()">Subscribe</button>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Models</h5>
+        <ul>
+          <li><a onclick="go('models')">Sedans</a></li>
+          <li><a onclick="go('models')">SUVs</a></li>
+          <li><a onclick="go('models')">Coupes</a></li>
+          <li><a onclick="go('convertibles')">Convertibles</a></li>
+          <li><a onclick="go('electric')">Electric</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Shopping</h5>
+        <ul>
+          <li><a href="#">Build Your BMW</a></li>
+          <li><a href="#">Search Inventory</a></li>
+          <li><a href="#">Current Offers</a></li>
+          <li><a href="#">Book a Test Drive</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Experience</h5>
+        <ul>
+          <li><a href="#">BMW M Division</a></li>
+          <li><a href="#">BMW i Electric</a></li>
+          <li><a href="#">Driving Experience</a></li>
+          <li><a href="#">BMW Classic</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="#">Find a Dealer</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Media Center</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 BMW Pakistan. All rights reserved.</div>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Legal Notice</a>
+        <a href="#">Cookie Settings</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

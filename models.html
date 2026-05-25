@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Models — BMW Pakistan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav id="nav">
+    <div class="nav-logo" onclick="go('home')">BMW</div>
+    <ul class="nav-links">
+      <li><a onclick="go('home')">Home</a></li>
+      <li><a onclick="go('models')">Models</a></li>
+      <li><a onclick="go('electric')">Electric</a></li>
+      <li><a onclick="go('pricing')">Pricing</a></li>
+      <li><a onclick="go('discover')">Discover</a></li>
+    </ul>
+    <button class="nav-pill" onclick="go('models')">Configure ›</button>
+    <button class="hamburger" id="hbg" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div id="page-models" class="page active">
+    <section style="background:var(--dark);text-align:center;padding:120px 40px 80px;position:relative;overflow:hidden">
+      <div class="hero-orb1" style="opacity:0.6"></div>
+      <div class="hero-orb2" style="opacity:0.5"></div>
+      <div class="hero-grid"></div>
+      <span class="section-eyebrow" style="position:relative">Full Range</span>
+      <h1 class="section-title" style="position:relative;margin-bottom:14px">Our Models</h1>
+      <p class="section-sub" style="position:relative;margin-bottom:0">Discover the full range of BMW vehicles designed to deliver the ultimate driving experience.</p>
+    </section>
+
+    <section class="models-bg" style="padding-top:60px">
+      <div class="models-grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
+        
+        <div class="model-card reveal" id="3-series">
+          <img class="model-card-img" src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=600&q=80" alt="">
+          <div class="model-badge-wrap"><span class="model-badge">Sedan</span></div>
+          <h3>3 Series</h3>
+          <div class="model-price">From PKR 1.85 Crore</div>
+          <p class="model-desc">The definitive sports sedan. Setting standards in driving dynamics, connectivity, and premium comfort infrastructure safety profiles.</p>
+          <div class="model-specs-row">
+            <div class="msr-item"><div class="msr-val">255 hp</div><div class="msr-key">Power</div></div>
+            <div class="msr-item"><div class="msr-val">5.6s</div><div class="msr-key">0–100 km/h</div></div>
+          </div>
+          <span class="model-cta">Configure</span>
+        </div>
+
+        <div class="model-card reveal reveal-delay-1" id="5-series">
+          <img class="model-card-img" src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=600&q=80" alt="">
+          <div class="model-badge-wrap"><span class="model-badge">Executive</span></div>
+          <h3>5 Series</h3>
+          <div class="model-price">From PKR 2.40 Crore</div>
+          <p class="model-desc">The epitome of business athletics. Dynamic proportions, elegant styling appointments, and pioneering digital control systems execution.</p>
+          <div class="model-specs-row">
+            <div class="msr-item"><div class="msr-val">335 hp</div><div class="msr-key">Power</div></div>
+            <div class="msr-item"><div class="msr-val">4.9s</div><div class="msr-key">0–100 km/h</div></div>
+          </div>
+          <span class="model-cta">Configure</span>
+        </div>
+
+        <div class="model-card reveal reveal-delay-2" id="7-series">
+          <img class="model-card-img" src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=600&q=80" alt="">
+          <div class="model-badge-wrap"><span class="model-badge">Luxury</span></div>
+          <h3>7 Series</h3>
+          <div class="model-price">From PKR 4.60 Crore</div>
+          <p class="model-desc">Pure luxury meets ground-breaking engineering. Magnificent status, advanced entertainment displays, and peerless ride insulation dynamics.</p>
+          <div class="model-specs-row">
+            <div class="msr-item"><div class="msr-val">536 hp</div><div class="msr-key">Power</div></div>
+            <div class="msr-item"><div class="msr-val">4.1s</div><div class="msr-key">0–100 km/h</div></div>
+          </div>
+          <span class="model-cta">Configure</span>
+        </div>
+
+        <div class="model-card reveal" id="x5">
+          <img class="model-card-img" src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=600&q=80" alt="">
+          <div class="model-badge-wrap"><span class="model-badge">SAV</span></div>
+          <h3>X5</h3>
+          <div class="model-price">From PKR 3.10 Crore</div>
+          <p class="model-desc">The benchmark SAV. Command presence, luxurious versatility, and sovereign all-terrain power distribution performance matrix options.</p>
+          <div class="model-specs-row">
+            <div class="msr-item"><div class="msr-val">375 hp</div><div class="msr-key">Power</div></div>
+            <div class="msr-item"><div class="msr-val">5.3s</div><div class="msr-key">0–100 km/h</div></div>
+          </div>
+          <span class="model-cta">Configure</span>
+        </div>
+
+        <div class="model-card reveal reveal-delay-1" id="ix">
+          <img class="model-card-img" src="https://images.unsplash.com/photo-1617814065893-00757125efab?w=600&q=80" alt="">
+          <div class="model-badge-wrap"><span class="model-badge electric">Electric</span></div>
+          <h3>iX</h3>
+          <div class="model-price">From PKR 9.90 Crore</div>
+          <p class="model-desc">The future of mobility. Monolithic exterior architectural layout lines combined with an expansive, futuristic luxury lounge interior ambience.</p>
+          <div class="model-specs-row">
+            <div class="msr-item"><div class="msr-val">523 hp</div><div class="msr-key">Power</div></div>
+            <div class="msr-item"><div class="msr-val">4.6s</div><div class="msr-key">0–100 km/h</div></div>
+          </div>
+          <span class="model-cta">Configure</span>
+        </div>
+
+        <div class="model-card reveal reveal-delay-2" id="m4">
+          <img class="model-card-img" src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=600&q=80" alt="">
+          <div class="model-badge-wrap"><span class="model-badge performance">Performance</span></div>
+          <h3>M4 Competition</h3>
+          <div class="model-price">From PKR 11.90 Crore</div>
+          <p class="model-desc">High-performance sports coupon engineering track-optimized engineering paradigms directly infused into everyday road layouts.</p>
+          <div class="model-specs-row">
+            <div class="msr-item"><div class="msr-val">503 hp</div><div class="msr-key">Power</div></div>
+            <div class="msr-item"><div class="msr-val">3.4s</div><div class="msr-key">0–100 km/h</div></div>
+          </div>
+          <span class="model-cta">Configure</span>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="fb-logo">BMW</div>
+        <p>The Ultimate Driving Machine. Engineering excellence since 1916. Proudly serving Pakistan.</p>
+        <div class="footer-newsletter">
+          <input type="email" id="nlInput" placeholder="Your email address">
+          <button onclick="subscribe()">Subscribe</button>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Models</h5>
+        <ul>
+          <li><a onclick="go('models')">Sedans</a></li>
+          <li><a onclick="go('models')">SUVs</a></li>
+          <li><a onclick="go('models')">Coupes</a></li>
+          <li><a onclick="go('models')">Convertibles</a></li>
+          <li><a onclick="go('electric')">Electric</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Shopping</h5>
+        <ul>
+          <li><a href="#">Build Your BMW</a></li>
+          <li><a href="#">Search Inventory</a></li>
+          <li><a href="#">Current Offers</a></li>
+          <li><a href="#">Book a Test Drive</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Experience</h5>
+        <ul>
+          <li><a href="#">BMW M Division</a></li>
+          <li><a href="#">BMW i Electric</a></li>
+          <li><a href="#">Driving Experience</a></li>
+          <li><a href="#">BMW Classic</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="#">Find a Dealer</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Media Center</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 BMW Pakistan. All rights reserved.</div>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Legal Notice</a>
+        <a href="#">Cookie Settings</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

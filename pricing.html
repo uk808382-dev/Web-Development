@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Plans — BMW Pakistan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav id="nav">
+    <div class="nav-logo" onclick="go('home')">BMW</div>
+    <ul class="nav-links">
+      <li><a onclick="go('home')">Home</a></li>
+      <li><a onclick="go('models')">Models</a></li>
+      <li><a onclick="go('electric')">Electric</a></li>
+      <li><a onclick="go('pricing')">Pricing</a></li>
+      <li><a onclick="go('discover')">Discover</a></li>
+    </ul>
+    <button class="nav-pill" onclick="go('models')">Configure ›</button>
+    <button class="hamburger" id="hbg" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div id="page-pricing" class="page active">
+    <section style="background:var(--dark);text-align:center;padding:120px 40px 80px;position:relative;overflow:hidden">
+      <div class="hero-orb1" style="opacity:0.4;top:-200px"></div>
+      <div class="hero-orb2" style="opacity:0.4;bottom:-200px"></div>
+      <div class="hero-grid"></div>
+      <span class="section-eyebrow" style="position:relative">Transparent Pricing</span>
+      <h1 class="section-title" style="position:relative;margin-bottom:14px">Investment Matrix</h1>
+      <p class="section-sub" style="position:relative;margin-bottom:0">Examine baseline structural cost parameters and custom bespoke financial assistance configurations.</p>
+    </section>
+
+    <section class="pricing-bg">
+      <div class="pricing-wrap">
+        <div class="pricing-table reveal">
+          <div class="ptable-head">
+            <div>Model Variant</div>
+            <div>Powertrain</div>
+            <div>Base MSRP</div>
+            <div>Financial Packages</div>
+          </div>
+          <div class="ptable-row"><div>3 Series Sedan</div><div>320i Petrol</div><div>PKR 1.85 Crore</div><div>Custom Lease Options Available</div></div>
+          <div class="ptable-row"><div>5 Series Sedan</div><div>520i Petrol</div><div>PKR 2.40 Crore</div><div>Corporate Financing Matrix Plans</div></div>
+          <div class="ptable-row"><div>X5 SAV</div><div>xDrive40i</div><div>PKR 3.10 Crore</div><div>Trade-In Program Eligible</div></div>
+          <div class="ptable-row"><div>7 Series Flagship</div><div>740i Luxury</div><div>PKR 4.60 Crore</div><div>VIP Bespoke Leasing Structures</div></div>
+          <div class="ptable-row"><div>M4 Competition</div><div>M4 Comp</div><div>PKR 11.90 Crore</div><div>Special Financing at 8.5% ROI</div></div>
+          <div class="ptable-row"><div>iX</div><div>xDrive50</div><div>PKR 9.90 Crore</div><div>Special EV Financing Available</div></div>
+          <div class="ptable-row"><div>i4</div><div>eDrive40</div><div>PKR 5.85 Crore</div><div>Special EV Financing Available</div></div>
+        </div>
+
+        <div style="text-align:center;margin:72px 0 40px">
+          <span class="section-eyebrow reveal">BMW Financial Services</span>
+          <h2 class="section-title reveal">Drive your dream today.</h2>
+          <p class="section-sub reveal" style="margin-bottom:0">Flexible solutions designed to make owning a BMW effortlessly within reach.</p>
+        </div>
+
+        <div class="finance-row reveal">
+          <div class="finance-tile">
+            <div class="finance-icon">%</div>
+            <h4>Attractive Rates</h4>
+            <p>Competitive interest starting from 8.5% per annum with fully transparent terms and no hidden charges.</p>
+          </div>
+          <div class="finance-tile">
+            <div class="finance-icon"> 📅 </div>
+            <h4>Flexible Tenure</h4>
+            <p>Loan tenure options from 1 to 7 years, structured around your lifestyle and financial goals.</p>
+          </div>
+          <div class="finance-tile">
+            <div class="finance-icon">↓</div>
+            <h4>Low Down Payment</h4>
+            <p>Down payment starting from just 15% of the on-road price — making your BMW accessible today.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="fb-logo">BMW</div>
+        <p>The Ultimate Driving Machine. Engineering excellence since 1916. Proudly serving Pakistan.</p>
+        <div class="footer-newsletter">
+          <input type="email" id="nlInput" placeholder="Your email address">
+          <button onclick="subscribe()">Subscribe</button>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Models</h5>
+        <ul>
+          <li><a onclick="go('models')">Sedans</a></li>
+          <li><a onclick="go('models')">SUVs</a></li>
+          <li><a onclick="go('models')">Coupes</a></li>
+          <li><a onclick="go('models')">Convertibles</a></li>
+          <li><a onclick="go('electric')">Electric</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Shopping</h5>
+        <ul>
+          <li><a href="#">Build Your BMW</a></li>
+          <li><a href="#">Search Inventory</a></li>
+          <li><a href="#">Current Offers</a></li>
+          <li><a href="#">Book a Test Drive</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Experience</h5>
+        <ul>
+          <li><a href="#">BMW M Division</a></li>
+          <li><a href="#">BMW i Electric</a></li>
+          <li><a href="#">Driving Experience</a></li>
+          <li><a href="#">BMW Classic</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="#">Find a Dealer</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Media Center</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 BMW Pakistan. All rights reserved.</div>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Legal Notice</a>
+        <a href="#">Cookie Settings</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
