@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NexaCloud | SaaS Landing Page</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:Inter,Segoe UI,sans-serif;background:#08111f;color:#eaf2ff;line-height:1.6}a{text-decoration:none;color:inherit}.nav{display:flex;justify-content:space-between;align-items:center;padding:24px 8%;position:sticky;top:0;background:rgba(8,17,31,.85);backdrop-filter:blur(12px);z-index:10;border-bottom:1px solid rgba(255,255,255,.08)}.logo{font-size:24px;font-weight:800;color:#65e4ff}.nav a{margin-left:22px;color:#b8c7da}.btn{display:inline-block;padding:13px 22px;border-radius:999px;background:linear-gradient(135deg,#46e6ff,#7c5cff);color:white;font-weight:700;box-shadow:0 10px 30px rgba(70,230,255,.18)}.hero{padding:90px 8%;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}.badge{display:inline-block;padding:8px 14px;border:1px solid rgba(101,228,255,.35);border-radius:999px;color:#65e4ff;margin-bottom:20px;background:rgba(101,228,255,.08)}h1{font-size:clamp(42px,6vw,76px);line-height:1.05;margin-bottom:24px}.hero p{font-size:19px;color:#b8c7da;max-width:620px;margin-bottom:32px}.panel{background:linear-gradient(180deg,rgba(255,255,255,.09),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.12);border-radius:28px;padding:24px;box-shadow:0 30px 80px rgba(0,0,0,.35)}.chart{height:360px;border-radius:22px;background:radial-gradient(circle at 70% 20%,rgba(124,92,255,.4),transparent 35%),linear-gradient(135deg,#0e2038,#09111f);position:relative;overflow:hidden}.bar{position:absolute;bottom:30px;width:38px;border-radius:10px;background:linear-gradient(#46e6ff,#7c5cff);animation:rise 2s ease infinite alternate}.bar:nth-child(1){left:50px;height:95px}.bar:nth-child(2){left:115px;height:150px;animation-delay:.2s}.bar:nth-child(3){left:180px;height:210px;animation-delay:.4s}.bar:nth-child(4){left:245px;height:130px;animation-delay:.6s}.bar:nth-child(5){left:310px;height:255px;animation-delay:.8s}@keyframes rise{from{transform:scaleY(.8);opacity:.75}to{transform:scaleY(1);opacity:1}}.section{padding:70px 8%}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);padding:28px;border-radius:24px}.card h3{margin-bottom:12px;color:#fff}.card p{color:#adc0d5}.footer{text-align:center;padding:36px;color:#789} @media(max-width:850px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.nav div:last-child{display:none}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="logo">NexaCloud</div><div><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a></div></nav>
+<header class="hero">
+<div><span class="badge">AI-powered business dashboard</span><h1>Manage your business with smarter cloud analytics.</h1><p>NexaCloud helps teams track metrics, automate workflows, and make better decisions from one powerful workspace.</p><a class="btn" href="#features">Start Free Trial</a></div>
+<div class="panel"><div class="chart"><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span></div></div>
+</header>
+<section class="section" id="features"><div class="grid"><div class="card"><h3>Real-time Insights</h3><p>Monitor your business performance with clean dashboards and automatic reports.</p></div><div class="card"><h3>Team Workflow</h3><p>Assign tasks, track progress, and reduce operational friction across teams.</p></div><div class="card"><h3>Secure Cloud</h3><p>Built with scalable architecture, encryption, and role-based access control.</p></div></div></section>
+<footer class="footer">© 2026 NexaCloud. Built as a professional single-file HTML template.</footer>
+<script>
+document.querySelector('.btn').addEventListener('click',()=>console.log('Trial button clicked'));
+</script>
+</body>
+</html>
